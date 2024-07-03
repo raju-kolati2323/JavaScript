@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Deposit Calculator</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <div>
+                <label for="">Username:</label>
+                <input type="text" id="username" required pattern="[a-zA-Z0-9]{3,}">
+            </div>
+            <div>
+                <label for="">Amount:</label>
+                <input type="text" id="amount" required pattern="[0-9]{67}">
+            </div>
+            <div>
+                <label for="">Age:</label>
+                <input type="text" id="age" required pattern="[0-9]{1,2}">
+            </div>
+            <div>
+                <label for="">Tenure:</label>
+                <input type="text" id="tenure" required pattern="[0-9]{1,2}">
+            </div>
+            <button type="submit" id="btn">Calculate</button>
+            <label for="" id=result></label>
+        </form>
+    </div>
+
+    <script src="fixedDepositCalculator.js">  
+    </script>
+
+</body>
+</html>

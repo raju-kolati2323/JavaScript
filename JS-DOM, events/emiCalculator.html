@@ -1,0 +1,66 @@
+<!-- Create a javascript app to calculate monthly emi on different types of loans, here we need to collect
+ username,password, type of loan, principal amount, tenure, now we need to calculate monlthy emi of the
+ loan conditions
+
+-> read username,password, the entered password must be first 3 characters of username and @123 when 
+the password is matched then only we need to calculate emi otherwise print error message like username 
+or password incorrect
+
+-> different intereste rate for loans are 
+	home loan->11%
+	vehicle loan->15%
+	education loan->5%
+	personal loan->12%
+
+-> read loan types in dropdown and tenure in years and print monthly emi
+
+-> if loan amount is more than 5Lakhs then add 5000 as processing fee in the final amount
+
+->Images and theme of the app should be related -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form>
+            <div> 
+                <label for="username">Username:</label>
+                <input type="text" id="username" required pattern="[a-zA-Z]{3,}">
+            </div>
+            <div>    
+                <label for="password">Password:</label>
+                <input type="password" id="password" pattern="[a-zA-Z0-9@]{7}">
+            </div>    
+            <div>
+                <label for="loan">Type of loan: </label>
+                <select for="" id="dropdown" onchange="myfun()">
+                    <option value="">Select type of loan</option>
+                    <option value="11">Home loan</option>
+                    <option value="15">Vehicle loan</option>
+                    <option value="5">Education loan</option>
+                    <option value="12">Personal loan</option>
+                </select>
+            </div>
+            <div>
+                <label for="principal">Principal amount:</label>
+                <input type="text" id="principal" required pattern="[0-9]{5,7}">
+            </div>
+            <div>
+                <label for="tenure">Tenure:</label>
+                <input type="number" id="tenure" required pattern="[0-9]{1,}">
+            </div>
+            <div>
+                <button type="submit" id="btn">Calculate EMI</button>
+                <lable id="result"></lable>
+            </div>
+        </form>
+    </div>
+
+    <script src="emiCalculator.js"></script>
+</body>
+</html>

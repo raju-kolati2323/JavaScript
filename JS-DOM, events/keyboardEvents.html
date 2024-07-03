@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <form onsubmit="myfun()">
+        <label>Name: </label>
+        <input type="text" name="" id="in" required>
+        <br>
+        <label for="">Select your city: </label>
+        <select name="" id="city" onchange="hello()">
+            <option value="">Select your city</option>
+            <option value="Vizag 530016">Vizag</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Hyderabad 500050">Hyderabad</option>
+        </select>
+        <br>
+        <label for="" id="result"></label>
+        <br>
+        <button type='submit' >Submit</button>
+        </div>
+        
+    </form>
+        <script src="keyboardEvents.js"></script>
+</body>
+</html>
