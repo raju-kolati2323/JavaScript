@@ -1,0 +1,19 @@
+<!-- 6. Write a JavaScript program to print running time  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <button onclick="to()">Time</button>
+    <p id="p"></p>
+    <script>
+        function to(){
+        var a=new Date()
+        document.getElementById('p').innerHTML=a.toTimeString()
+        }
+    </script>
+ </body>
+ </html>

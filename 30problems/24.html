@@ -1,0 +1,29 @@
+<!-- 24. write a javascript program to print following pattern
+
+20 18 16 14
+12 10 8
+6 4
+2
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rows=4, pattern='',value=20
+        for(let i=1;i<=rows;i++){
+            for(let j=5-i;j>=1;j--){
+                pattern+=value+' '
+                value-=2
+
+            }
+            pattern+='<br>'
+        }
+        document.write(pattern)
+    </script>
+</body>
+</html>

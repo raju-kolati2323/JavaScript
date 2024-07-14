@@ -1,0 +1,28 @@
+<!-- 29. write a javascript program to implement promises for even numbers, if number is even fulfill the 
+ promise and it is odd reject the promise
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=parseInt(prompt('enter a number'))
+        let check=new Promise((res,rej)=>{
+                if(n%2==0){
+                    res('The given number '+'('+n+')'+' is even')
+                }
+                else{
+                    rej('('+n+')'+ ' Not an even')
+                }
+            }
+        )
+        check
+        .then((msg)=>document.write(msg))
+        .catch((msg)=>document.write(msg))
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- 19. write a javascript program to check given number is armstrong number or not -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        let sum=0,count=0,rem=0
+        let n=parseInt(prompt('enter a number'))
+        let temp=n
+        while(n>0){
+            rem=n%10
+            n=parseInt(n/10)
+            count++
+        }
+        n=temp
+        while(n>0){
+            rem=n%10
+            sum=sum+rem**count
+            n=parseInt(n/10)
+        }
+        if(sum==temp){
+            document.write(temp,' is an amstrong number')
+        }
+        else{
+            document.write(temp, ' is not an amstrong number')
+        }
+    </script>
+ </body>
+ </html>

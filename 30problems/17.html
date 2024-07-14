@@ -1,0 +1,25 @@
+<!-- 17. write a javascript program to count number of vowels in a string  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        let str=prompt('enter a string')
+        let count=0
+        arr=['a','e','i','o','u','A','E','I','O','U']
+        newstr=str.split('')
+        for(let a of arr){
+            for(let b of newstr){
+                if(a==b){
+                    count++
+                }
+            }
+        }
+        document.write('Therefore number of vowels in the given string are: ',count)
+    </script>
+ </body>
+ </html>

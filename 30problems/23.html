@@ -1,0 +1,22 @@
+<!-- 23. Write a JavaScript program to apply text color for h1 which user entered in input tag and submit -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myh1">The common thing &#128514; - HELLO WORLD</h1>
+    <form action="" onsubmit="fun()">
+        <label for="">Name: </label>
+        <input type="text" required>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function fun(){
+            document.getElementById('myh1').style.color='red'
+        }
+    </script>
+</body>
+</html>

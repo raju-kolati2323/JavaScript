@@ -28,3 +28,11 @@ var myVar; var sec=0; var min=0; var hr=0;var day=0
         function stop(){
             clearInterval(myVar);
         }
+        function reset(){
+            sec=-1
+            min=0
+            hr=0
+            day=0
+            setTimeout(()=>{stop()},1000)
+            
+        }
