@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var marks=prompt("enter your marks");
+        if (marks<=0 || marks>100){
+            alert('invalid input')
+        }
+        else{
+            if(marks>=90)
+                {
+                    document.write('A');
+                }
+            else if(marks>80 && marks<90)
+                {
+                    document.write('B');
+                }
+            else if(marks>70 && marks<80)
+                {
+                    document.write('C');
+                }
+            else if(marks>60 && marks<70)
+                {
+                    document.write('D');
+                }
+            else
+                {
+                    document.write('FAIL');
+                }
+            }
+    </script>
+</body>
+</html>
